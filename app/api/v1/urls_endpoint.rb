@@ -5,7 +5,7 @@ module V1
         requires :original
         # e.g. http://localhost:3000/api/v1/urls/convert?original=http://google.com/abcderfes
       end
-      post '/convert' do
+      get '/convert' do
         url = Url.new(original: params[:original])
         url.sanitize
         if url.save

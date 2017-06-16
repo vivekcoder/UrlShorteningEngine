@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application has two parts: Web and API
 
-Things you may want to cover:
+after migration task and bundle install, point to localhost:3000
 
-* Ruby version
+input a long url, for e.g.
+	http://google.com/abcderfes
 
-* System dependencies
+this would get converted to a short url, in this case to "http://google.com/k8gglO"
 
-* Configuration
+Now, to test the API, point browser to
+	http://localhost:3000/api/v1/urls/convert?original=http://google.com/abcderfes
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+this would get converted to a short url, in this case to "http://google.com/k8gglO"
